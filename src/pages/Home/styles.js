@@ -260,7 +260,7 @@ export const Conteiner = styled.div`
             align-items: center;
 
             h2{
-                margin-top: 20rem;
+                margin-top: 10rem;
                 text-align: center;
             }
         };
