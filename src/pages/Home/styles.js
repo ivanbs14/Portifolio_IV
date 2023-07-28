@@ -153,7 +153,7 @@ export const Conteiner = styled.div`
 
             .perfil{
                 width: 34%;
-                height: 98%;
+                height: 92%;
             }
         }
 

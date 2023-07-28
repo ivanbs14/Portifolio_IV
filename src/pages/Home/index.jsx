@@ -45,7 +45,7 @@ export function Home() {
 
                     <ButtonText 
                         title={"Visualize o currículo"}
-                        aRef={"https://drive.google.com/file/d/11QFXdqanx5RBPoEKhsq3odcuPv-wr5oK/view?usp=sharing"}
+                        aRef={"https://drive.google.com/file/d/1gol3c9DC0vc4c6lottdLEYaEBDpjC8vw/view?usp=sharing"}
                     />
                 </div>
 
@@ -138,7 +138,7 @@ export function Home() {
 
                             <ButtonText 
                                 title={"Visualize o meu currículo"}
-                                aRef={"https://drive.google.com/file/d/11QFXdqanx5RBPoEKhsq3odcuPv-wr5oK/view?usp=sharing"}
+                                aRef={"https://drive.google.com/file/d/1gol3c9DC0vc4c6lottdLEYaEBDpjC8vw/view?usp=sharing"}
                             />
                         </div>
                     </div>
