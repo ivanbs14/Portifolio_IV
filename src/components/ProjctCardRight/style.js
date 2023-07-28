@@ -4,22 +4,22 @@ export const Conteiner = styled.div`
     width: 100%;
     display: flex;
     justify-content: space-between;
-    gap: 100px;
+    gap: 10rem;
 
-    padding: 20px 0;
+    padding: 2rem 0;
     border-bottom: 2px solid black;
     color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
 
     img{
         order: 2;
-        width: 400px;
-        height: 240px;
-        border-radius: 10px;
+        width: 40rem;
+        height: 24rem;
+        border-radius: 1rem;
     }
 
     .descript{
         order: 1;
-        width: 600px;
+        width: 60rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -48,12 +48,12 @@ export const Conteiner = styled.div`
     }
 
     h3{
-        font-size: 32px;
+        font-size: 3.2rem;
     }
 
     p{
         font-family: 'Philosopher', sans-serif;
-        font-size: 18px;
+        font-size: 1.8rem;
     }
 
     p:nth-child(3){
@@ -63,27 +63,27 @@ export const Conteiner = styled.div`
 
     span{
         font-family: 'Philosopher', sans-serif;
-        font-size: 12px;
+        font-size: 1.2rem;
     };
 
     .datas{
         display: flex;
-        gap: 10px;
+        gap: 1rem;
     };
 
     button{
-        margin: 10px 0;
+        margin: 1rem 0;
         border: 1px solid #000;
-        width: 150px;
-        height: 45px;
+        width: 15rem;
+        height: 4.5rem;
         color: ${({theme, isActive }) => isActive ? theme.COLORS.WHITE : theme.COLORS.BACKGROUND_900};
 
         border-radius: 5px;
-        font-size: 16px;
+        font-size: 1.6rem;
 
         a{
-            width: 150px;
-            height: 45px;
+            width: 15rem;
+            height: 4.5rem;
         }
     };
 

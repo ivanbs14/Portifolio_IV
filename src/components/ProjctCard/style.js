@@ -100,7 +100,6 @@ export const Conteiner = styled.div`
 
         .descript{
             align-items: center; 
-
         };        
     }
 `;
