@@ -287,14 +287,21 @@ export const Conteiner = styled.div`
             }
 
             button{
-                font-size: 2.4rem;
+                width: 22rem;
+                height: 4rem;
+                font-size: 1.8rem;
                 font-weight: 700;
                 letter-spacing: 0;
+
+                a{
+                    width: 22rem;
+                    height: 4rem;
+                }
             }
 
             button:hover{
-                width: 29rem;
-                height: 6.5rem;
+                width: 22.2rem;
+                height: 4.5rem;
             }
         };
 
@@ -398,6 +405,11 @@ export const Conteiner = styled.div`
                     height: 6rem;
 
                     font-size: 2.4rem;
+
+                    a{
+                        width: 30rem;
+                        height: 6rem;
+                    }
                 }
 
                 button:hover{
