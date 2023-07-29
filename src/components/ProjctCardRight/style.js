@@ -48,12 +48,12 @@ export const Conteiner = styled.div`
     }
 
     h3{
-        font-size: 3.2rem;
+        font-size: 2.8rem;
     }
 
     p{
         font-family: 'Philosopher', sans-serif;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     p:nth-child(3){
@@ -97,16 +97,60 @@ export const Conteiner = styled.div`
 
     @media (max-width: 430px) {
         flex-direction: column;
-        gap: 5rem;
         align-items: center;
+        gap: 3rem;
+        padding: 1rem 0;
+        margin-bottom: 1.6rem;
 
         img{
             order: 1;
+            width: 35rem;
+            height: 20rem;
+            border-radius: 0.5rem;
         }
 
         .descript{
             order: 2;
             align-items: center; 
-        };        
+            align-items: center; 
+            width: 36rem;
+
+            .icons{
+                gap: 3px;
+                margin: 0.5rem 0 1rem 0;
+
+                img{
+                    width: 4.5rem;
+                    height: 4.5rem;
+                    border-radius: 2px;
+                    cursor: pointer;
+                }
+
+                img:hover{
+                    width: 5rem;
+                    height: 5rem;
+                }
+            };  
+        };
+        
+        h3, p, span{
+            margin-bottom: 1rem;
+        };
+
+        h3{
+            font-size: 2.4rem;
+        };
+
+        p{
+            font-size: 2rem;
+        };
+
+        p:nth-child(3){
+            margin-bottom: 0.5px;
+        };
+
+        span{
+            font-size: 1.6rem;
+        };
     }
 `;

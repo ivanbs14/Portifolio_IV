@@ -8,7 +8,7 @@ export const Conteiner = styled.div`
     .logs{
         width: 6rem;
         height: 6rem;
-    }
+    };
 
     h3{
         font-family: 'PT Serif', serif;
@@ -22,5 +22,22 @@ export const Conteiner = styled.div`
             letter-spacing: .1rem;
             margin-bottom: 1rem;
         }
-    }
+    };
+
+    @media (max-width: 430px) {
+        .logs{
+            width: 5rem;
+            height: 5rem;
+        };
+
+    h3{
+        font-size: 2.4rem;
+        letter-spacing: .1rem;
+
+        span{
+            font-size: 1.6rem;
+            letter-spacing: 0;
+        }
+    };
+    };
 `;

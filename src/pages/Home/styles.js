@@ -2,31 +2,6 @@ import styled from "styled-components";
 import BackgroundImg from '../../assets/06edit.jpg';
 
 export const Conteiner = styled.div`
-    .navigation{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        ul{
-            margin-right: 8rem;
-            display: flex;
-            gap: 3.2rem;
-
-            list-style: none;
-            font-family: 'PT Serif', serif;
-
-            li{
-                font-size: 3.8rem;
-                font-weight: 700;
-                letter-spacing: .2rem;
-            }
-
-            li:hover{
-                font-size: 4.2rem;
-            }
-        }
-
-    };
 
     .homePage {
         display: grid;
@@ -36,12 +11,52 @@ export const Conteiner = styled.div`
             "section2"
             "section3";
     };
-
+        
+    .sectionImg{
+        width: 100%;
+        height: 100vh;
+        background-image: url(${BackgroundImg});
+        background-size: cover;
+        background-position: center center;
+        opacity: 0.3;
+        
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    };
+    
     #sectionOne{
         grid-area: section1;
         padding: 6rem 3.6rem 0;
-
+        
         position: relative;
+        
+        .navigation{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    
+            ul{
+                margin-right: 8rem;
+                display: flex;
+                gap: 3.2rem;
+    
+                list-style: none;
+                font-family: 'PT Serif', serif;
+    
+                li{
+                    font-size: 2.4rem;
+                    font-weight: 700;
+                    letter-spacing: .2rem;
+                }
+    
+                li:hover{
+                    font-size: 2.6rem;
+                }
+            }
+    
+        };
 
         h2{
             margin-top: 30rem;
@@ -65,19 +80,6 @@ export const Conteiner = styled.div`
         }
     };
     
-    .sectionImg{
-        width: 100%;
-        height: 100vh;
-        background-image: url(${BackgroundImg});
-        background-size: cover;
-        background-position: center center;
-        opacity: 0.3;
-        
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-    };
     
     #sectionTwo{
         grid-area: section2;
@@ -258,31 +260,59 @@ export const Conteiner = styled.div`
             display: flex;
             flex-direction: column;
             align-items: center;
+            padding: 3rem 0;
+
+            .navigation{
+                ul{
+                    margin-right: 0rem;
+    
+                    li{
+                        font-size: 2.4rem;
+                        font-weight: 600;
+                        letter-spacing: 0;
+                        margin-top: 2rem;
+                    }
+
+                    li:hover{
+                        font-size: 2.6rem;
+                    }
+                }
+            };
 
             h2{
-                margin-top: 10rem;
+                font-size: 1.8rem;
+                margin-top: 29rem;
                 text-align: center;
             }
-        };
 
-        .navigation{
-
-            ul{
-                margin-right: 0rem;
+            button{
+                font-size: 2.4rem;
+                font-weight: 700;
+                letter-spacing: 0;
             }
 
+            button:hover{
+                width: 29rem;
+                height: 6.5rem;
+            }
         };
+
 
         #sectionTwo{
             grid-area: section2;
+            margin: 0;
+            border-radius: 0;
+            padding: 2rem 1.6rem;
 
             .cabecalho{
                 flex-direction: column;
-                margin-bottom: 3.2rem;
+                margin-bottom: 0;
 
                 h2{
                     order: 2;
-                    margin-top: 3.2rem;
+                    margin-top: 2rem;
+                    font-size: 2.4rem;
+                    letter-spacing: 1px;
                 }
 
                 div{
@@ -295,15 +325,17 @@ export const Conteiner = styled.div`
             grid-area: section3;
             display: flex;
             flex-direction: column;
-            padding: 6.4rem;
+            padding: 6.4rem 0;
 
             .cabecalhoTree{
                 flex-direction: column;
-                margin-bottom: 3.2rem;
+                margin-bottom: 0;
 
                 h2{
                     order: 2;
-                    margin-top: 3.2rem;
+                    margin-top: 2rem;
+                    font-size: 2.4rem;
+                    letter-spacing: 1px;
                 }
 
                 div{
@@ -314,10 +346,28 @@ export const Conteiner = styled.div`
             #sobreM{
                 flex-direction: column;
                 align-items: center;
-                gap: 5rem;
+                gap: 2rem;
+                padding: 2rem 4rem;
                 
                 .perfil{
-                    width: 45%;
+                    width: 70%;
+                }
+
+                svg{
+                    width: 5rem;
+                    height: 5rem;
+                }
+
+                svg:hover{
+                    width: 5.5rem;
+                    height: 5.5rem;
+                }
+
+                #email{
+                    svg {
+                        width: 5.6rem;
+                        height: 5.6rem; 
+                    }
                 }
             }
 
@@ -326,6 +376,33 @@ export const Conteiner = styled.div`
                 flex-direction: column;
                 align-items: center;
                 margin-right: 0;
+
+                p{
+                    font-size: 1.8rem;
+
+                    a{
+                        font-size: 1.8rem;
+                        font-weight: 700;
+                        color: #28203e;
+                    }
+                }
+
+                p:nth-child(3){
+                    font-size: 2.4rem;
+                }
+
+                button{
+                    margin-top: 2.4rem;
+                    width: 30rem;
+                    height: 6rem;
+
+                    font-size: 2.4rem;
+                }
+
+                button:hover{
+                    width: 20.5rem;
+                    height: 4.5rem;
+                }
             }
         }
     }
