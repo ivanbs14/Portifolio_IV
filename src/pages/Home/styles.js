@@ -241,12 +241,9 @@ export const Conteiner = styled.div`
     }
 
     @media (max-width: 430px) {
-        .homePage {
-            grid-template-rows: 70vh auto auto;
-        };
 
         .sectionImg{
-            height: 70vh;
+            height: 100vh;
             opacity: 0.3;
         };
 
@@ -281,7 +278,7 @@ export const Conteiner = styled.div`
 
             h2{
                 font-size: 1.8rem;
-                margin-top: 20rem;
+                margin-top: 40rem;
                 text-align: center;
                 margin-bottom: 0.5rem;
             }
