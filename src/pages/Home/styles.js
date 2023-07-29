@@ -281,8 +281,9 @@ export const Conteiner = styled.div`
 
             h2{
                 font-size: 1.8rem;
-                margin-top: 29rem;
+                margin-top: 20rem;
                 text-align: center;
+                margin-bottom: 0.5rem;
             }
 
             button{
