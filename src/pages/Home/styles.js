@@ -404,7 +404,7 @@ export const Conteiner = styled.div`
                     width: 30rem;
                     height: 6rem;
 
-                    font-size: 2.4rem;
+                    font-size: 2.2rem;
 
                     a{
                         width: 30rem;
@@ -413,8 +413,10 @@ export const Conteiner = styled.div`
                 }
 
                 button:hover{
-                    width: 20.5rem;
-                    height: 4.5rem;
+                    width: 30.5rem;
+                    height: 6.5rem;
+
+                    font-size: 2.4rem;
                 }
             }
         }
