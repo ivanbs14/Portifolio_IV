@@ -281,30 +281,38 @@ export const Conteiner = styled.div`
                 }
             };
 
-            h2{
-                font-size: 1.8rem;
-                margin-top: 35rem;
-                text-align: center;
-                margin-bottom: 0.5rem;
-            }
+            .subscripts {
+                margin-bottom: 10rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
 
-            button{
-                width: 22rem;
-                height: 4rem;
-                font-size: 1.8rem;
-                font-weight: 700;
-                letter-spacing: 0;
-
-                a{
+                h2{
+                    font-size: 1.8rem;
+                    /* margin-top: 35rem; */
+                    text-align: center;
+                    margin-bottom: 2rem;
+                }
+    
+                button{
                     width: 22rem;
                     height: 4rem;
+                    font-size: 1.8rem;
+                    font-weight: 700;
+                    letter-spacing: 0;
+    
+                    a{
+                        width: 22rem;
+                        height: 4rem;
+                    }
                 }
-            }
+    
+                button:hover{
+                    width: 22.2rem;
+                    height: 4.5rem;
+                }
+            };
 
-            button:hover{
-                width: 22.2rem;
-                height: 4.5rem;
-            }
         };
 
 
