@@ -29,7 +29,10 @@ export const Conteiner = styled.div`
     #sectionOne{
         grid-area: section1;
         padding: 6rem 3.6rem 0;
-        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
         position: relative;
         
         .navigation{
@@ -58,26 +61,29 @@ export const Conteiner = styled.div`
     
         };
 
-        h2{
-            margin-top: 30rem;
-            margin-bottom: 4.2rem;
-            font-family: 'Philosopher', sans-serif;
-            font-size: 1.8rem;
-        }
+        .subscripts {
+            margin-bottom: 10rem;
 
-        button{
-            font-size: 1.8rem;
-            letter-spacing: 1px;
-            background-color: ${({ theme }) => theme.COLORS.Golden200};
-        }
+            h2{
+                margin-bottom: 4.2rem;
+                font-family: 'Philosopher', sans-serif;
+                font-size: 1.8rem;
+            }
 
-        button:hover{
-            width: 29rem;
-            height: 6.5rem;
+            button{
+                font-size: 1.8rem;
+                letter-spacing: 1px;
+                background-color: ${({ theme }) => theme.COLORS.Golden200};
+            }
 
-            background-color: ${({ theme }) => theme.COLORS.Golden100};
-            color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
-        }
+            button:hover{
+                width: 29rem;
+                height: 6.5rem;
+
+                background-color: ${({ theme }) => theme.COLORS.Golden100};
+                color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
+            }
+        };
     };
     
     
@@ -154,8 +160,7 @@ export const Conteiner = styled.div`
             padding: 5rem;
 
             .perfil{
-                width: 34%;
-                height: 92%;
+                max-width: 50rem;
             }
         }
 

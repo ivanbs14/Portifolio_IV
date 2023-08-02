@@ -38,15 +38,16 @@ export function Home() {
                             </li>
                         </ul>
                     </nav>
-                
-                    <h2>ME CONHEÇA ATRAVÉS DESTE PORTIFÓLIO<br/>
-                        OU BAIXE MEU CURRÍCULO.
-                    </h2>
+                    <div className='subscripts'>
+                        <h2>ME CONHEÇA ATRAVÉS DESTE PORTIFÓLIO<br/>
+                            OU BAIXE MEU CURRÍCULO.
+                        </h2>
 
-                    <ButtonText 
-                        title={"Visualize o currículo"}
-                        aRef={"https://drive.google.com/file/d/1gol3c9DC0vc4c6lottdLEYaEBDpjC8vw/view?usp=sharing"}
-                    />
+                        <ButtonText 
+                            title={"Visualize o currículo"}
+                            aRef={"https://drive.google.com/file/d/1gol3c9DC0vc4c6lottdLEYaEBDpjC8vw/view?usp=sharing"}
+                        />
+                    </div>
                 </div>
 
                 <div id="sectionTwo" className="section">
