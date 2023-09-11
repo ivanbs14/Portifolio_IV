@@ -4,6 +4,13 @@ import { ButtonText } from "../ButtonText";
 
 export function ProjctCard({imgLogo, titleCd, subTitleCd, btnRef, btnRefGit, ...rest}) {
 
+    const handleDeployClick = () => {
+        if (btnRef) {
+            // Se btnRef estiver definido, redirecione para a visualização de deploy
+            window.location.href = btnRef;
+        }
+    };
+
     return(
         <Conteiner>
             <img src={imgLogo} alt="imagem de um projeto" />
@@ -20,10 +27,14 @@ export function ProjctCard({imgLogo, titleCd, subTitleCd, btnRef, btnRefGit, ...
                         aRef={btnRefGit}
                     />
                     
-                    <ButtonText
-                        title={"Vizualizar deploy"}
-                        aRef={btnRef}
-                    />
+                    {btnRef && (
+                        <ButtonText 
+                            onClick={handleDeployClick}
+                            title={"Visualizar deploy"}
+                            aRef={btnRef}
+                            
+                        />
+                    )}
                 </div>
             </div>
         </Conteiner>

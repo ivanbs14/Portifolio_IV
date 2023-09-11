@@ -8,6 +8,7 @@ import imgLogoTree from '../../assets/QRWHITE.png';
 import imgIfood from '../../assets/foodexplorer.png';
 import imgMovie from '../../assets/notmovie.png';
 import imgNotpad from '../../assets/notpad.png';
+import imgTypeW from '../../assets/typeW.png';
 import perfilImg from '../../assets/08edit.jpg';
 
 import { ButtonText } from '../../components/ButtonText';
@@ -15,6 +16,8 @@ import { Card } from '../../components/Card';
 import { ProjctCard } from '../../components/ProjctCard';
 import { ProjctCardRight } from '../../components/ProjctCardRight';
 import { BoxIcons } from '../../components/BoxIcons';
+
+let curriculo = "https://drive.google.com/file/d/132qzq9X4rQdGCHfEXDzp4rE7AL0w2B3y/view?usp=sharing";
 
 export function Home() {
 
@@ -45,7 +48,7 @@ export function Home() {
 
                         <ButtonText 
                             title={"Visualize o currículo"}
-                            aRef={"https://drive.google.com/file/d/1gol3c9DC0vc4c6lottdLEYaEBDpjC8vw/view?usp=sharing"}
+                            aRef={curriculo}
                         />
                     </div>
                 </div>
@@ -68,7 +71,12 @@ export function Home() {
                         btnRefGit={"https://github.com/ivanbs14/FoodExplore_Front.git"}
                         btnRef={"https://foofexploreriv.netlify.app/"}
                     >
-                        <BoxIcons/>
+                        <BoxIcons
+                            nd={true}
+                            js={true}
+                            sc={true}
+                            rc={true}
+                        />
                     </ProjctCard>
                     
                     <ProjctCardRight
@@ -78,18 +86,43 @@ export function Home() {
                         btnRefGit={"https://github.com/ivanbs14/RocketMOvies_Front-End.git"}
                         btnRef={"https://notemovies.netlify.app/"}
                     >
-                        <BoxIcons/>
+                        <BoxIcons
+                            nd={true}
+                            js={true}
+                            sc={true}
+                            rc={true}
+                        />
                     </ProjctCardRight>
 
                     <ProjctCard
+                        imgLogo={imgTypeW}
+                        titleCd={"APP CLIMA"}
+                        subTitleCd={"Descubra o clima com facilidade! Esta aplicação fornece informações precisas e atualizadas sobre o clima em qualquer lugar do mundo. Consultando uma API meteorológica, podemos verificar como esta o tempo atual e como será nos próximos 5 dias."}
+                        btnRefGit={"https://github.com/ivanbs14/App_Clima.git"}
+                    >
+                        <BoxIcons
+                            ts={true}
+                            nd={true}
+                            js={true}
+                            sc={true}
+                            rc={true}
+                        />
+                    </ProjctCard>
+
+                    <ProjctCardRight
                         imgLogo={imgNotpad}
                         titleCd={"NOTPAD"}
                         subTitleCd={"API RESTFULL. Onde após criar um cadastro e fazer Login. O usuário vai cadastrar o filme que assistiu, classificar de 0 a 5, criar um breve resumo e atribuir os gêneros."}
                         btnRefGit={"https://github.com/ivanbs14/NotPad_Front.git"}
                         btnRef={"https://notepadss.netlify.app/"}
                     >
-                        <BoxIcons/>
-                    </ProjctCard>
+                        <BoxIcons
+                            nd={true}
+                            js={true}
+                            sc={true}
+                            rc={true}
+                        />
+                    </ProjctCardRight>
                     
                 </div>
 
@@ -112,12 +145,9 @@ export function Home() {
                                 - Graduando em Análise e Desenvolvimento de Sistemas.<br/>
                                 - Especialização Fullstack Explorer na Instituição. <a href="https://www.rocketseat.com.br/explorer">RockectSeat</a>.<br/>
                                 Trabalhando para sempre obter experiência nas skills que possuo: <br/>
-                                - ReactJs.<br/>
-                                - Javascript <br/>
-                                - Node.js<br/>
-                                - SQL <br/>
-                                E intensificando as minhas habilidades comportamentais como: organização, criatividade, raciocínio 
-                                e dinamismo.
+                                - Node.js, ReactJs, Javascript, TypeScript, Styled Components, SQL, MongoDB, Docker e Git.<br/>
+                                E intensificando as minhas habilidades comportamentais como:<br/>
+                                - organização, criatividade, raciocínio e dinamismo.
                             </p>
                             
                             <p className='pTwo'>Contatos:</p>
@@ -139,7 +169,7 @@ export function Home() {
 
                             <ButtonText 
                                 title={"Visualize o meu currículo"}
-                                aRef={"https://drive.google.com/file/d/1gol3c9DC0vc4c6lottdLEYaEBDpjC8vw/view?usp=sharing"}
+                                aRef={curriculo}
                             />
                         </div>
                     </div>
