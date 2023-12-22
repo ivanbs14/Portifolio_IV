@@ -2,13 +2,11 @@ import { Conteiner, Link } from './styles';
 import { FaWhatsappSquare, FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 
+import { projectsData } from "../../utils/data";
+
 import imgLogo from '../../assets/logo.png';
 import imgLogoTwo from '../../assets/Captura de Tela 2023-07-20 às 22.02.22.png';
 import imgLogoTree from '../../assets/QRWHITE.png';
-import imgIfood from '../../assets/foodexplorer.png';
-import imgMovie from '../../assets/notmovie.png';
-import imgNotpad from '../../assets/notpad.png';
-import imgTypeW from '../../assets/typeW.png';
 import perfilImg from '../../assets/08edit.jpg';
 
 import { ButtonText } from '../../components/ButtonText';
@@ -16,8 +14,9 @@ import { Card } from '../../components/Card';
 import { ProjctCard } from '../../components/ProjctCard';
 import { ProjctCardRight } from '../../components/ProjctCardRight';
 import { BoxIcons } from '../../components/BoxIcons';
+import { Arrow } from '../../components/Arrow';
 
-let curriculo = "https://drive.google.com/file/d/132qzq9X4rQdGCHfEXDzp4rE7AL0w2B3y/view?usp=sharing";
+let curriculo = "https://drive.google.com/file/d/16ZL3Hz6PwqPy19KrKiW2REmlfh6MT7H3/view?usp=sharing";
 
 export function Home() {
 
@@ -46,10 +45,14 @@ export function Home() {
                             OU BAIXE MEU CURRÍCULO.
                         </h2>
 
-                        <ButtonText 
-                            title={"Visualize o currículo"}
-                            aRef={curriculo}
-                        />
+                        <div className='arrows'>
+                            <ButtonText 
+                                title={"Visualize o currículo"}
+                                aRef={curriculo}
+                            />
+
+                            <Arrow />
+                        </div>
                     </div>
                 </div>
 
@@ -64,65 +67,40 @@ export function Home() {
 
                     </div>
 
-                    <ProjctCard
-                        imgLogo={imgIfood}
-                        titleCd={"FOOD EXPLORER"}
-                        subTitleCd={"API RESTFULL. O food explorer, é um menu interativo para um restaurante. O admin é o responsável, logo poderá criar, visualizar, editar e apagar. Os usuários irão visualizar todos os pratos cadastrados e poderão acrescentar a um pedido."}
-                        btnRefGit={"https://github.com/ivanbs14/FoodExplore_Front.git"}
-                        btnRef={"https://foofexploreriv.netlify.app/"}
-                    >
-                        <BoxIcons
-                            nd={true}
-                            js={true}
-                            sc={true}
-                            rc={true}
-                        />
-                    </ProjctCard>
-                    
-                    <ProjctCardRight
-                        imgLogo={imgMovie}
-                        titleCd={"ROCKETMOVIES"}
-                        subTitleCd={"API RESTFULL. Onde após criar um cadastro e fazer Login. O usuário vai cadastrar o filme que assistiu, classificar de 0 a 5, criar um breve resumo e atribuir os gêneros."}
-                        btnRefGit={"https://github.com/ivanbs14/RocketMOvies_Front-End.git"}
-                        btnRef={"https://notemovies.netlify.app/"}
-                    >
-                        <BoxIcons
-                            nd={true}
-                            js={true}
-                            sc={true}
-                            rc={true}
-                        />
-                    </ProjctCardRight>
-
-                    <ProjctCard
-                        imgLogo={imgTypeW}
-                        titleCd={"APP CLIMA"}
-                        subTitleCd={"Descubra o clima com facilidade! Esta aplicação fornece informações precisas e atualizadas sobre o clima em qualquer lugar do mundo. Consultando uma API meteorológica, podemos verificar como esta o tempo atual e como será nos próximos 5 dias."}
-                        btnRefGit={"https://github.com/ivanbs14/App_Clima.git"}
-                    >
-                        <BoxIcons
-                            ts={true}
-                            nd={true}
-                            js={true}
-                            sc={true}
-                            rc={true}
-                        />
-                    </ProjctCard>
-
-                    <ProjctCardRight
-                        imgLogo={imgNotpad}
-                        titleCd={"NOTPAD"}
-                        subTitleCd={"API RESTFULL. Onde após criar um cadastro e fazer Login. O usuário vai cadastrar o filme que assistiu, classificar de 0 a 5, criar um breve resumo e atribuir os gêneros."}
-                        btnRefGit={"https://github.com/ivanbs14/NotPad_Front.git"}
-                        btnRef={"https://notepadss.netlify.app/"}
-                    >
-                        <BoxIcons
-                            nd={true}
-                            js={true}
-                            sc={true}
-                            rc={true}
-                        />
-                    </ProjctCardRight>
+                    <div>
+                        {projectsData.map((project, index) => {
+                            const isEven = index % 2 === 0;
+                            if (isEven) {
+                            return (
+                                <ProjctCard
+                                key={index}
+                                imgLogo={project.imgLogo}
+                                titleCd={project.titleCd}
+                                subTitleCd={project.subTitleCd}
+                                btnRefGit={project.btnRefGit}
+                                btnRef={project.btnRef}
+                                btnRefTwo={project.btnRefTwo}
+                                >
+                                <BoxIcons {...project.icons} />
+                                </ProjctCard>
+                            );
+                        } else {
+                            return (
+                                <ProjctCardRight
+                                key={index}
+                                imgLogo={project.imgLogo}
+                                titleCd={project.titleCd}
+                                subTitleCd={project.subTitleCd}
+                                btnRefGit={project.btnRefGit}
+                                btnRef={project.btnRef}
+                                btnRefTwo={project.btnRefTwo}
+                                >
+                                <BoxIcons {...project.icons} />
+                                </ProjctCardRight>
+                            );
+                            }
+                        })}
+                        </div>
                     
                 </div>
 
@@ -140,7 +118,7 @@ export function Home() {
                         <img className='perfil' src={perfilImg} alt="Imagem de um homem" />
                         <div id='descrtP'>
                             <h3>Ivan Barbosa</h3>
-                            <p>Olá, me chamo Ivan e sou desenvolvedor de software jr desde 2022.<br/>
+                            <p>Olá, sou desenvolvedor de software jr desde 2022.<br/>
                                 Possuo habilidades fullstack, Mas meu forte é desenvolvimento front-end.<br/>
                                 - Graduado em Análise e Desenvolvimento de Sistemas.<br/>
                                 - Especialização Fullstack Explorer na Instituição. <a href="https://www.rocketseat.com.br/explorer">RockectSeat</a>.<br/>
@@ -148,6 +126,18 @@ export function Home() {
                                 - Node.js, ReactJs, Javascript, TypeScript, Styled Components, SQL, MongoDB, Docker e Git.<br/>
                                 E intensificando as minhas habilidades comportamentais como:<br/>
                                 - organização, criatividade, raciocínio e dinamismo.
+                            </p>
+                            
+                            <p className='pTwo'>Experiências:</p>
+                            <p>
+                                <br/>
+                                Desenvolvedor Front-end Bugaboo Studio, Híbrido Desde de Dezembro de 2023<br/>
+                                - Responsável pelo desenvolvimento e manutenção de novas funcionalidades no Front-end.<br/>
+                                - Tecnologias utilizadas: JavaScript, React, Styled Components, Git. 
+                                <br/><br/>
+                                Desenvolvedor Front-end Júnior CodeDraw Technology, <br/>Home office Dezembro de 2022 a Dezembro de 2023.<br/>
+                                - Projeto Uplitt App, responsável pelo desenvolvimento e manutenção de novas funcionalidades no Front-end.<br/>
+                                - Tecnologias utilizadas: JavaScript, React, Styled Components, Docker, Git.
                             </p>
                             
                             <p className='pTwo'>Contatos:</p>

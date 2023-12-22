@@ -52,10 +52,11 @@ export const Conteiner = styled.div`
                     font-size: 2.4rem;
                     font-weight: 700;
                     letter-spacing: .2rem;
+                    transition: transform 0.3s ease;
                 }
     
                 li:hover{
-                    font-size: 2.6rem;
+                    transform: scale(1.1);
                 }
             }
     
@@ -74,12 +75,11 @@ export const Conteiner = styled.div`
                 font-size: 1.8rem;
                 letter-spacing: 1px;
                 background-color: ${({ theme }) => theme.COLORS.Golden200};
+                transition: transform 0.3s ease;
             }
 
             button:hover{
-                width: 29rem;
-                height: 6.5rem;
-
+                transform: scale(1.1);
                 background-color: ${({ theme }) => theme.COLORS.Golden100};
                 color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
             }
@@ -174,13 +174,11 @@ export const Conteiner = styled.div`
                 color: ${({ theme }) => theme.COLORS.WHITE};
                 background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
                 border: .5px solid ${({ theme }) => theme.COLORS.BACKGROUND_900};
-
+                transition: transform 0.3s ease;
             }
 
             button:hover{
-                width: 20.5rem;
-                height: 4.5rem;
-
+                transform: scale(1.1);
                 background-color: ${({ theme }) => theme.COLORS.Golden100};
                 color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
             }
@@ -227,11 +225,11 @@ export const Conteiner = styled.div`
             svg{
                 width: 4rem;
                 height: 4rem;
+                transition: transform 0.3s ease;
             }
 
             svg:hover{
-                width: 4.4rem;
-                height: 4.4rem;
+                transform: scale(1.1);
                 color: ${({ theme }) => theme.COLORS.Golden100};
             }
 
@@ -273,10 +271,11 @@ export const Conteiner = styled.div`
                         font-weight: 600;
                         letter-spacing: 0;
                         margin-top: 2rem;
+                        transition: transform 0.3s ease;
                     }
 
                     li:hover{
-                        font-size: 2.6rem;
+                        transform: scale(1.1);
                     }
                 }
             };
@@ -289,7 +288,6 @@ export const Conteiner = styled.div`
 
                 h2{
                     font-size: 1.8rem;
-                    /* margin-top: 35rem; */
                     text-align: center;
                     margin-bottom: 2rem;
                 }
@@ -300,6 +298,7 @@ export const Conteiner = styled.div`
                     font-size: 1.8rem;
                     font-weight: 700;
                     letter-spacing: 0;
+                    transition: transform 0.3s ease;
     
                     a{
                         width: 22rem;
@@ -308,8 +307,7 @@ export const Conteiner = styled.div`
                 }
     
                 button:hover{
-                    width: 22.2rem;
-                    height: 4.5rem;
+                    transform: scale(1.1);
                 }
             };
 
@@ -374,11 +372,13 @@ export const Conteiner = styled.div`
                 svg{
                     width: 5rem;
                     height: 5rem;
+                    transition: transform 0.3s ease;
                 }
 
                 svg:hover{
                     width: 5.5rem;
                     height: 5.5rem;
+                    transform: scale(1.1);
                 }
 
                 #email{
@@ -415,6 +415,7 @@ export const Conteiner = styled.div`
                     height: 6rem;
 
                     font-size: 2.2rem;
+                    transition: transform 0.3s ease;
 
                     a{
                         width: 30rem;
@@ -423,10 +424,7 @@ export const Conteiner = styled.div`
                 }
 
                 button:hover{
-                    width: 30.5rem;
-                    height: 6.5rem;
-
-                    font-size: 2.4rem;
+                   transform: scale(1.1);
                 }
             }
         }

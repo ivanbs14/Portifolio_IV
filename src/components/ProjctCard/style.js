@@ -25,19 +25,19 @@ export const Conteiner = styled.div`
 
         .icons{
             display: flex;
-            gap: 5px;
+            gap: 1rem;
             margin: 0.5rem 0 1rem 0;
 
             img{
                 width: 3.2rem;
                 height: 3.2rem;
-                border-radius: 3px;
+                border-radius: .3rem;
                 cursor: pointer;
+                transition: transform 0.3s ease;
             }
 
             img:hover{
-                width: 3.5rem;
-                height: 3.5rem;
+                transform: scale(1.1);
             }
         }
     };
@@ -79,6 +79,7 @@ export const Conteiner = styled.div`
 
         border-radius: 5px;
         font-size: 1.6rem;
+        transition: transform 0.3s ease;
 
         a{
             width: 15rem;
@@ -87,8 +88,7 @@ export const Conteiner = styled.div`
     };
 
     button:hover {
-        width: 16rem;
-        height: 5rem;
+        transform: scale(1.1);
 
         color: ${({ theme }) => theme.COLORS.WHITE};
         border-color: ${({ theme }) => theme.COLORS.WHITE};

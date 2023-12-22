@@ -2,12 +2,16 @@ import { Conteiner } from "./style";
 
 import { ButtonText } from "../ButtonText";
 
-export function ProjctCardRight({imgLogo, titleCd, subTitleCd, btnRef, btnRefGit, ...rest}) {
+export function ProjctCardRight({imgLogo, titleCd, subTitleCd, btnRef, btnRefTwo, btnRefGit, ...rest}) {
 
     const handleDeployClick = () => {
         if (btnRef) {
             // Se btnRef estiver definido, redirecione para a visualização de deploy
             window.location.href = btnRef;
+        }
+
+        if (btnRefTwo) {
+            window.location.href = btnRefTwo;
         }
     };
 
@@ -31,6 +35,15 @@ export function ProjctCardRight({imgLogo, titleCd, subTitleCd, btnRef, btnRefGit
                             onClick={handleDeployClick}
                             title={"Visualizar deploy"}
                             aRef={btnRef}
+                            
+                        />
+                    )}
+
+                    {btnRefTwo && (
+                        <ButtonText 
+                            onClick={handleDeployClick}
+                            title={"Visualizar Video"}
+                            aRef={btnRefTwo}
                             
                         />
                     )}
