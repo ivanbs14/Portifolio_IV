@@ -142,7 +142,7 @@ export function Home() {
                             <h3>Ivan Barbosa</h3>
                             <p>Olá, me chamo Ivan e sou desenvolvedor de software jr desde 2022.<br/>
                                 Possuo habilidades fullstack, Mas meu forte é desenvolvimento front-end.<br/>
-                                - Graduando em Análise e Desenvolvimento de Sistemas.<br/>
+                                - Graduado em Análise e Desenvolvimento de Sistemas.<br/>
                                 - Especialização Fullstack Explorer na Instituição. <a href="https://www.rocketseat.com.br/explorer">RockectSeat</a>.<br/>
                                 Trabalhando para sempre obter experiência nas skills que possuo: <br/>
                                 - Node.js, ReactJs, Javascript, TypeScript, Styled Components, SQL, MongoDB, Docker e Git.<br/>
