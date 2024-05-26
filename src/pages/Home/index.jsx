@@ -14,7 +14,6 @@ import { Card } from '../../components/Card';
 import { ProjctCard } from '../../components/ProjctCard';
 import { ProjctCardRight } from '../../components/ProjctCardRight';
 import { BoxIcons } from '../../components/BoxIcons';
-import { Arrow } from '../../components/Arrow';
 
 let curriculo = "https://drive.google.com/file/d/16ZL3Hz6PwqPy19KrKiW2REmlfh6MT7H3/view?usp=sharing";
 
@@ -36,22 +35,20 @@ export function Home() {
                                 <a href="#sectionTwo">PROJETOS</a>
                             </li>
                             <li>
-                                <a href="#sectionTree">SOBRE MIM</a>
+                                <a href="#sectionTree">SOBRE</a>
                             </li>
                         </ul>
                     </nav>
                     <div className='subscripts'>
-                        <h2>ME CONHEÇA ATRAVÉS DESTE PORTIFÓLIO<br/>
+                        <h2>ME CONHEÇA ATRAVÉS DESTE PORTIFÓLIO
                             OU BAIXE MEU CURRÍCULO.
                         </h2>
 
                         <div className='arrows'>
                             <ButtonText 
-                                title={"Visualize o currículo"}
+                                title={"Visualize meu currículo"}
                                 aRef={curriculo}
                             />
-
-                            <Arrow />
                         </div>
                     </div>
                 </div>

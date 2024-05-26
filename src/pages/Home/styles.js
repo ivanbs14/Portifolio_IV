@@ -9,7 +9,8 @@ export const Conteiner = styled.div`
         grid-template-areas: 
             "section1"
             "section2"
-            "section3";
+            "section3"
+        ;
     };
         
     .sectionImg{
@@ -63,10 +64,13 @@ export const Conteiner = styled.div`
         };
 
         .subscripts {
-            margin-bottom: 10rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 12rem;
 
             h2{
-                margin-bottom: 4.2rem;
                 font-family: 'Philosopher', sans-serif;
                 font-size: 1.8rem;
             }
@@ -76,6 +80,7 @@ export const Conteiner = styled.div`
                 letter-spacing: 1px;
                 background-color: ${({ theme }) => theme.COLORS.Golden200};
                 transition: transform 0.3s ease;
+                margin-bottom: 2rem;
             }
 
             button:hover{
