@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Conteiner = styled.div`
-    width: 100%;
+   // width: 100%;
     display: flex;
     justify-content: space-between;
     gap: 10rem;
@@ -95,7 +95,8 @@ export const Conteiner = styled.div`
         border-color: ${({ theme }) => theme.COLORS.WHITE};
     };
 
-    @media (max-width: 430px) {
+    @media (max-width: 1024px) {
+        width: 100%;
         flex-direction: column;
         align-items: center;
         gap: 3rem;

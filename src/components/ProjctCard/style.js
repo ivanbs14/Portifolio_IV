@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Conteiner = styled.div`
-    width: 100%;
+   // width: 100%;
     display: flex;
     gap: 10rem;
     justify-content: space-between;
@@ -94,7 +94,8 @@ export const Conteiner = styled.div`
         border-color: ${({ theme }) => theme.COLORS.WHITE};
     };
 
-    @media (max-width: 430px) {
+    @media (max-width: 1024px) {
+        width: 100%;
         flex-direction: column;
         gap: 3rem;
         padding: 1rem 0;

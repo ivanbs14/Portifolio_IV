@@ -64,7 +64,7 @@ export function Home() {
 
                     </div>
 
-                    <div>
+                    <div className='projectView'>
                         {projectsData.map((project, index) => {
                             const isEven = index % 2 === 0;
                             if (isEven) {
@@ -97,7 +97,7 @@ export function Home() {
                             );
                             }
                         })}
-                        </div>
+                    </div>
                     
                 </div>
 

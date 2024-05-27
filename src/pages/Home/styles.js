@@ -117,6 +117,13 @@ export const Conteiner = styled.div`
             div{
                 order: 2;
             }
+        };
+
+        .projectView {
+            display: flex;
+        
+            justify-content: center;
+            flex-wrap: wrap;
         }
     };
 
@@ -248,7 +255,7 @@ export const Conteiner = styled.div`
 
     }
 
-    @media (max-width: 430px) {
+    @media (max-width: 1024px) {
 
         .sectionImg{
             height: 100vh;
