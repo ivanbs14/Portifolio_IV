@@ -1,8 +1,8 @@
 import { Conteiner } from "./style";
-
 import { ButtonText } from "../ButtonText";
+import imgPlay from '../../assets/play.svg'
 
-export function ProjctCardRight({imgLogo, titleCd, subTitleCd, btnRef, btnRefTwo, btnRefGit, ...rest}) {
+export function ProjctCardRight({imgLogo, titleCd, subTitleCd, btnRef, btnRefTwo, btnRefGit, openClick, ...rest}) {
 
     const handleDeployClick = () => {
         if (btnRef) {
@@ -49,7 +49,12 @@ export function ProjctCardRight({imgLogo, titleCd, subTitleCd, btnRef, btnRefTwo
                     )}
                 </div>
             </div>
-            <img src={imgLogo} alt="imagem de um projeto" />
+            <div className="img-container">
+                <img src={imgLogo} alt="imagem de um projeto" />
+                <div className="imgPlay" onClick={openClick}>
+                    <img src={imgPlay} alt="imagem de um projeto" />
+                </div>
+            </div>
         </Conteiner>
     )
 };

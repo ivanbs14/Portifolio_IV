@@ -14,10 +14,21 @@ import { Card } from '../../components/Card';
 import { ProjctCard } from '../../components/ProjctCard';
 import { ProjctCardRight } from '../../components/ProjctCardRight';
 import { BoxIcons } from '../../components/BoxIcons';
+import { ModalPg } from '../../components/ModalPg';
+import { useState } from 'react';
+import { MoviePg } from '../../components/MoviePg/index';
 
 let curriculo = "https://drive.google.com/file/d/16ZL3Hz6PwqPy19KrKiW2REmlfh6MT7H3/view?usp=sharing";
 
 export function Home() {
+    const [selectedCard, setSelectedCard] = useState(null);
+    const [showModal, setShowModal] = useState(false);
+
+    const handleImageClick = (project) => {
+        setSelectedCard(project);
+        console.log(project);
+        setShowModal(true);
+    };
 
     return(
         <Conteiner>
@@ -70,13 +81,14 @@ export function Home() {
                             if (isEven) {
                             return (
                                 <ProjctCard
-                                key={index}
-                                imgLogo={project.imgLogo}
-                                titleCd={project.titleCd}
-                                subTitleCd={project.subTitleCd}
-                                btnRefGit={project.btnRefGit}
-                                btnRef={project.btnRef}
-                                btnRefTwo={project.btnRefTwo}
+                                    key={index}
+                                    imgLogo={project.imgLogo}
+                                    titleCd={project.titleCd}
+                                    subTitleCd={project.subTitleCd}
+                                    btnRefGit={project.btnRefGit}
+                                    btnRef={project.btnRef}
+                                    btnRefTwo={project.btnRefTwo}
+                                    openClick={() => handleImageClick(project)}
                                 >
                                 <BoxIcons {...project.icons} />
                                 </ProjctCard>
@@ -84,13 +96,14 @@ export function Home() {
                         } else {
                             return (
                                 <ProjctCardRight
-                                key={index}
-                                imgLogo={project.imgLogo}
-                                titleCd={project.titleCd}
-                                subTitleCd={project.subTitleCd}
-                                btnRefGit={project.btnRefGit}
-                                btnRef={project.btnRef}
-                                btnRefTwo={project.btnRefTwo}
+                                    key={index}
+                                    imgLogo={project.imgLogo}
+                                    titleCd={project.titleCd}
+                                    subTitleCd={project.subTitleCd}
+                                    btnRefGit={project.btnRefGit}
+                                    btnRef={project.btnRef}
+                                    btnRefTwo={project.btnRefTwo}
+                                    openClick={() => handleImageClick(project)}
                                 >
                                 <BoxIcons {...project.icons} />
                                 </ProjctCardRight>
@@ -98,6 +111,14 @@ export function Home() {
                             }
                         })}
                     </div>
+
+                    {showModal && (
+                        <ModalPg
+                            openClick={showModal}
+                            idClick={selectedCard} 
+                            onClose={() => setShowModal(false)} 
+                        > <MoviePg propsMovie={selectedCard}/> </ModalPg>
+                    )}
                     
                 </div>
 
@@ -134,7 +155,7 @@ export function Home() {
                                 <br/><br/>
                                 Desenvolvedor Front-end Júnior CodeDraw Technology, <br/>Home office Dezembro de 2022 a Dezembro de 2023.<br/>
                                 - Projeto Uplitt App, responsável pelo desenvolvimento e manutenção de novas funcionalidades no Front-end.<br/>
-                                - Tecnologias utilizadas: JavaScript, React, Styled Components, Docker, Git.
+                                - Tecnologias utilizadas: JavaScript, Next, Tailwind, React, Styled Components, Git...
                             </p>
                             
                             <p className='pTwo'>Contatos:</p>

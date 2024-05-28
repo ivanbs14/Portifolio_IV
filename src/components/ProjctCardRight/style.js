@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Conteiner = styled.div`
-   // width: 100%;
     display: flex;
     justify-content: space-between;
     gap: 10rem;
@@ -10,11 +9,49 @@ export const Conteiner = styled.div`
     border-bottom: 2px solid black;
     color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
 
-    img{
-        order: 2;
+    .img-container {
+        position: relative;
         width: 40rem;
         height: 24rem;
         border-radius: 1rem;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+
+    .img-container img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .img-container .imgPlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        opacity: 0;
+        transition: opacity 0.8s ease;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 10rem;
+            height: 10rem;
+        }
+    }
+
+    .img-container:hover .imgPlay {
+        opacity: 1;
+        z-index: 1;
+    }
+
+    .img-container:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease; /* Adiciona uma transição suave */
+        box-shadow: 0 0 20px rgba(255, 250, 250, 0.5);
     }
 
     .descript{
@@ -93,6 +130,14 @@ export const Conteiner = styled.div`
 
         color: ${({ theme }) => theme.COLORS.WHITE};
         border-color: ${({ theme }) => theme.COLORS.WHITE};
+    };
+    
+    @media (max-width: 1920px) {
+        gap: 20rem;
+    };
+
+    @media (max-width: 1440px) {
+        gap: 13rem;
     };
 
     @media (max-width: 1024px) {
