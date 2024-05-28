@@ -23,7 +23,6 @@ export function ProjctCardRight({imgLogo, titleCd, subTitleCd, btnRef, btnRefTwo
                 <p>Tecnologias usadas:</p>
                 <div className="icons" {...rest}/>
 
-                <span>ATENÇÃO: OS SERVIDORES DO DEPLOY SÃO GRATUITOS, PORTANTO AO CLICAR, AGUARDE 1 MINUTO, ATUALIZE A PÁGINA PARA QUE O PROJETO SEJA INICIALIZADO</span>
                 <div className="datas">
                     <ButtonText
                         title={"Repositório GIT"}

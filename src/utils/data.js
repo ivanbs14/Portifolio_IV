@@ -52,10 +52,10 @@ export const projectsData = [
    {
      imgLogo: imgNotpad,
      titleCd: "NOTPAD",
-     subTitleCd: "API RESTFULL. Onde após criar um cadastro e fazer Login. O usuário vai cadastrar o filme que assistiu...",
+     subTitleCd: "API RESTFULL. Onde após criar um cadastro e fazer Login. O usuário vai cadastrar notas de estudos entre outros...",
      btnRefGit: "https://github.com/ivanbs14/NotPad_Front.git",
      //btnRef: "https://notepadss.netlify.app/",
      icons: { nd: true, js: true, sc: true, rc: true },
-     video: 'https://www.youtube.com/watch?v=iu-LBY7NXD4',
+     video: 'https://youtu.be/XxV2cnpthlI',
    }
  ];

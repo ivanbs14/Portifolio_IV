@@ -98,11 +98,6 @@ export const Conteiner = styled.div`
         font-weight: 700;
     };
 
-    span{
-        font-family: 'Philosopher', sans-serif;
-        font-size: 1.2rem;
-    };
-
     .datas{
         display: flex;
         gap: 10px;
@@ -175,7 +170,7 @@ export const Conteiner = styled.div`
             }
         };  
         
-        h3, p, span{
+        h3, p{
             margin-bottom: 1rem;
         };
 
@@ -189,10 +184,6 @@ export const Conteiner = styled.div`
 
         p:nth-child(3){
             margin-bottom: 0.5px;
-        };
-
-        span{
-            font-size: 1.6rem;
         };
 
         button{
