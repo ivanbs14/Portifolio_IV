@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Conteiner = styled.div`
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 10rem;
 
     padding: 2rem 0;
@@ -54,8 +54,8 @@ export const Conteiner = styled.div`
         box-shadow: 0 0 20px rgba(255, 250, 250, 0.5);
     }
 
-    .descript{
-        order: 1;
+    .descript {
+        //order: 2;
         width: 60rem;
         display: flex;
         flex-direction: column;
@@ -85,7 +85,7 @@ export const Conteiner = styled.div`
     }
 
     h3{
-        font-size: 2.8rem;
+        font-size: 2.6rem;
     }
 
     p{
@@ -128,16 +128,18 @@ export const Conteiner = styled.div`
     };
     
     @media (max-width: 1920px) {
-        gap: 20rem;
+        
     };
 
     @media (max-width: 1440px) {
         gap: 13rem;
     };
 
-    @media (max-width: 1024px) {
-        width: 100%;
+    @media (max-width: 1280px) {
+        width: 45rem;
+        height: 60rem;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         gap: 3rem;
         padding: 1rem 0;
@@ -152,9 +154,17 @@ export const Conteiner = styled.div`
 
         .descript{
             order: 2;
-            align-items: center; 
-            align-items: center; 
             width: 36rem;
+            height: 36rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            
+            .boxText {
+                height: 26rem;
+            }
 
             .icons{
                 gap: 3px;
@@ -179,7 +189,7 @@ export const Conteiner = styled.div`
         };
 
         h3{
-            font-size: 2.4rem;
+            font-size: 2.2rem;
         };
 
         p{
@@ -189,5 +199,15 @@ export const Conteiner = styled.div`
         p:nth-child(3){
             margin-bottom: 0.5px;
         };
+    };
+
+    @media (max-width: 768px) {
+        .boxText {
+            min-height: 10rem;
+        }
+    };
+
+    @media (max-width: 425px) {
+        width: 38rem;
     }
 `;

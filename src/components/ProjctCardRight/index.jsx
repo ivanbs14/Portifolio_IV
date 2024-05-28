@@ -19,7 +19,7 @@ export function ProjctCardRight({imgLogo, titleCd, subTitleCd, btnRef, btnRefTwo
         <Conteiner>
             <div className="descript">
                 <h3>{titleCd}</h3>
-                <p>{subTitleCd}</p>
+                <p className="boxText">{subTitleCd}</p>
                 <p>Tecnologias usadas:</p>
                 <div className="icons" {...rest}/>
 

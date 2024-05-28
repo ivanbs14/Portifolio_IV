@@ -16,7 +16,7 @@ export const projectsData = [
    },
    {
      imgLogo: imgIfood,
-     titleCd: "FOOD EXPLORER",
+     titleCd: "Food Explorer",
      subTitleCd: "API RESTFULL. O food explorer, é um menu interativo para um restaurante...",
      btnRefGit: "https://github.com/ivanbs14/FoodExplore_Front.git",
      //btnRef: "https://foofexploreriv.netlify.app/",
@@ -34,7 +34,7 @@ export const projectsData = [
    },
    {
      imgLogo: imgMovie,
-     titleCd: "ROCKETMOVIES",
+     titleCd: "Rocketmovies",
      subTitleCd: "API RESTFULL. Onde após criar um cadastro e fazer Login. O usuário vai cadastrar seus filmes...",
      btnRefGit: "https://github.com/ivanbs14/RocketMOvies_Front-End.git",
      //btnRef: "https://notemovies.netlify.app/",
@@ -43,7 +43,7 @@ export const projectsData = [
    },
    {
      imgLogo: imgTypeW,
-     titleCd: "APP CLIMA",
+     titleCd: "APP Clima",
      subTitleCd: "Descubra o clima com facilidade! Esta aplicação fornece informações precisas e atualizadas sobre o clima em qualquer lugar do mundo...",
      btnRefGit: "https://github.com/ivanbs14/App_Clima.git",
      icons: { ts: true, nd: true, js: true, sc: true, rc: true },
@@ -51,7 +51,7 @@ export const projectsData = [
    },
    {
      imgLogo: imgNotpad,
-     titleCd: "NOTPAD",
+     titleCd: "Notpad",
      subTitleCd: "API RESTFULL. Onde após criar um cadastro e fazer Login. O usuário vai cadastrar notas de estudos entre outros...",
      btnRefGit: "https://github.com/ivanbs14/NotPad_Front.git",
      //btnRef: "https://notepadss.netlify.app/",

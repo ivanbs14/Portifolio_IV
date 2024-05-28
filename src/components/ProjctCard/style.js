@@ -3,8 +3,7 @@ import styled from 'styled-components';
 export const Conteiner = styled.div`
     display: flex;
     gap: 10rem;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
 
     padding: 2rem 0;
     border-bottom: 2px solid black;
@@ -55,7 +54,8 @@ export const Conteiner = styled.div`
         box-shadow: 0 0 20px rgba(255, 250, 250, 0.5);
     }
 
-    .descript{
+    .descript {
+        order: 1;
         width: 60rem;
         display: flex;
         flex-direction: column;
@@ -85,7 +85,7 @@ export const Conteiner = styled.div`
     };
 
     h3{
-        font-size: 2.8rem;
+        font-size: 2.6rem;
     };
 
     p{
@@ -128,19 +128,27 @@ export const Conteiner = styled.div`
     };
     
     @media (max-width: 1920px) {
-        gap: 20rem;
+        //gap: 20rem;
     };
     
     @media (max-width: 1440px) {
         gap: 13rem;
     };
 
-    @media (max-width: 1024px) {
-        width: 100%;
+    @media (max-width: 1280px) {
+        width: 45rem;
+        height: 60rem;
         flex-direction: column;
+        align-items: center;
         gap: 3rem;
         padding: 1rem 0;
         margin-bottom: 1.6rem;
+
+        .img-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
 
         img{
             width: 35rem;
@@ -150,7 +158,16 @@ export const Conteiner = styled.div`
 
         .descript{
             align-items: center; 
-            width: 36rem;
+            width: 40rem;
+            height: 36rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            .boxText {
+                height: 26rem;
+            }
 
             .icons{
                 gap: 3px;
@@ -175,7 +192,7 @@ export const Conteiner = styled.div`
         };
 
         h3{
-            font-size: 2.4rem;
+            font-size: 2.2rem;
         };
 
         p{
@@ -191,5 +208,18 @@ export const Conteiner = styled.div`
             border-radius: 3px;
             font-size: 1.8rem;
         };
+    };
+
+    @media (max-width: 768px) {
+
+        .descript{
+            .boxText {
+                height: 20rem;
+            }
+        }
+    };
+
+    @media (max-width: 425px) {
+        width: 38rem;
     }
 `;

@@ -20,38 +20,32 @@ export default createGlobalStyle`
 
     /* Personaliza toda a barra de rolagem */
     ::-webkit-scrollbar {
-        width: 0px;  /* Define a largura da barra de rolagem vertical como 0 */
-        height: 0px; /* Define a altura da barra de rolagem horizontal como 0 */
+        width: 0px; 
+        height: 0px; 
     }
 
-    /* Personaliza os botões da barra de rolagem (setas) */
     ::-webkit-scrollbar-button {
-        display: none; /* Oculta os botões da barra de rolagem */
+        display: none; 
     }
 
-    /* Personaliza a alça de rolagem (arrastável) */
     ::-webkit-scrollbar-thumb {
-        background-color: transparent; /* Torna a alça de rolagem invisível */
+        background-color: transparent;
     }
 
-    /* Personaliza a faixa da barra de rolagem (barra de progresso) */
     ::-webkit-scrollbar-track {
-        background-color: transparent; /* Torna a faixa da barra de rolagem invisível */
+        background-color: transparent; 
     }
 
-    /* Personaliza parte do caminho da barra de progresso */
     ::-webkit-scrollbar-track-piece {
-        background-color: transparent; /* Torna parte do caminho da barra de rolagem invisível */
+        background-color: transparent; 
     }
 
-    /* Personaliza o canto inferior da barra de rolagem */
     ::-webkit-scrollbar-corner {
-        background-color: transparent; /* Torna o canto inferior invisível */
+        background-color: transparent; 
     }
 
-    /* Personaliza a alça arrastável no canto inferior */
     ::-webkit-resizer {
-        display: none; /* Oculta a alça arrastável no canto inferior */
+        display: none;
     }
 
     body, input, button, textarea {

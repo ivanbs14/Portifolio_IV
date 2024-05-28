@@ -22,7 +22,7 @@ export function ProjctCard({imgLogo, titleCd, subTitleCd, btnRef, btnRefGit, ope
             </div>
             <div className="descript">
                 <h3>{titleCd}</h3>
-                <p>{subTitleCd}</p>
+                <p className="boxText">{subTitleCd}</p>
                 <p>Tecnologias usadas:</p>
                 <div className="icons" {...rest}/>
 

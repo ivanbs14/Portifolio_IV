@@ -136,7 +136,7 @@ export function Home() {
                         <img className='perfil' src={perfilImg} alt="Imagem de um homem" />
                         <div id='descrtP'>
                             <h3>Ivan Barbosa</h3>
-                            <p>Olá, sou desenvolvedor de software jr desde 2022.<br/>
+                            <p className='boxText'>Olá, sou desenvolvedor de software jr desde 2022.<br/>
                                 Possuo habilidades fullstack, Mas meu forte é desenvolvimento front-end.<br/>
                                 - Graduado em Análise e Desenvolvimento de Sistemas.<br/>
                                 - Especialização Fullstack Explorer na Instituição. <a href="https://www.rocketseat.com.br/explorer">RockectSeat</a>.<br/>
@@ -147,7 +147,7 @@ export function Home() {
                             </p>
                             
                             <p className='pTwo'>Experiências:</p>
-                            <p>
+                            <p className='boxText'>
                                 <br/>
                                 Desenvolvedor Front-end Bugaboo Studio, Híbrido Desde de Dezembro de 2023<br/>
                                 - Responsável pelo desenvolvimento e manutenção de novas funcionalidades no Front-end.<br/>

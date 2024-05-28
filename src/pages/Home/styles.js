@@ -40,6 +40,7 @@ export const Conteiner = styled.div`
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding: 0rem 4rem;
     
             ul{
                 margin-right: 8rem;
@@ -139,6 +140,7 @@ export const Conteiner = styled.div`
             display: flex;
             align-items: center;
             justify-content: space-between;
+            padding: 0rem 4rem;
 
             color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
 
@@ -334,7 +336,7 @@ export const Conteiner = styled.div`
 
             .cabecalho{
                 flex-direction: column;
-                margin-bottom: 0;
+                margin-bottom: 4rem;
 
                 h2{
                     order: 2;
@@ -407,6 +409,10 @@ export const Conteiner = styled.div`
                 align-items: center;
                 margin-right: 0;
 
+                .boxText {
+                    width: 55rem;
+                }
+
                 p{
                     font-size: 1.8rem;
 
@@ -438,6 +444,33 @@ export const Conteiner = styled.div`
                 button:hover{
                    transform: scale(1.1);
                 }
+            }
+        }
+    };
+
+    @media (max-width: 425px) {
+        #sectionOne{
+
+            .subscripts {
+                width: 35rem;
+
+                h2{
+                    font-family: 'Philosopher', sans-serif;
+                    font-size: 1.8rem;
+                }
+            };
+        };
+
+        #sectionTree{
+            #sobreM{
+                padding: 1rem 2rem;
+            }
+
+            #descrtP{
+                .boxText {
+                    width: 33rem;
+                }
+
             }
         }
     }
