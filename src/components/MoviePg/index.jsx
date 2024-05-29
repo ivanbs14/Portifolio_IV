@@ -14,6 +14,15 @@ export function MoviePg({ propsMovie }) {
                     url={propsMovie.video}
                     width="100%"
                     height="100%"
+                    playsinline={true} // Importante para reprodução em iOS
+                    config={{
+                        file: {
+                            attributes: {
+                                controlsList: 'nodownload', // Impede download do vídeo
+                                playsInline: true // Importante para reprodução em iOS
+                            }
+                        }
+                    }}
                 />
             </div>
             <div className="descriptMovie">
