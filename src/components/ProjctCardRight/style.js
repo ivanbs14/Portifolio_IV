@@ -30,7 +30,8 @@ export const Conteiner = styled.div`
         width: 100%;
         height: 100%;
         cursor: pointer;
-        opacity: 0;
+        opacity: 1;
+        z-index: 1;
         transition: opacity 0.8s ease;
 
         display: flex;
@@ -43,19 +44,18 @@ export const Conteiner = styled.div`
         }
     }
 
-    .img-container:hover .imgPlay {
+   /*  .img-container:hover .imgPlay {
         opacity: 1;
         z-index: 1;
-    }
+    } */
 
     .img-container:hover {
         transform: scale(1.05);
-        transition: transform 0.3s ease; /* Adiciona uma transição suave */
+        transition: transform 0.3s ease;
         box-shadow: 0 0 20px rgba(255, 250, 250, 0.5);
     }
 
     .descript {
-        //order: 2;
         width: 60rem;
         display: flex;
         flex-direction: column;

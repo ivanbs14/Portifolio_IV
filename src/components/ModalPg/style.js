@@ -61,8 +61,8 @@ export const Conteiner = styled.div`
 
     @media (max-width: 1500px) {
         .mainModal {
-            width: 90%;
-            height: 70%;
+            width: 70%;
+            height: 55%;
         }
     };
    
