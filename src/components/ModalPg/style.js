@@ -68,24 +68,31 @@ export const Conteiner = styled.div`
    
     @media (max-width: 1280px) {
         .mainModal {
-            width: 80rem;
-            height: 60rem;
+            width: 70rem;
+            height: 65rem;
         }
     };
     
     @media (max-width: 768px) {
         .mainModal {
-            width: 95%;
-            height: 50%;
+            width: 80%;
+            height: 60%;
             padding: 2rem 2rem;
         }
     };
 
     @media (max-width: 425px) {
+        .closeBtn {
+            padding: 0rem 1rem;
+            .close-button {
+                font-size: 1.8rem;
+            }
+        };
+
         .mainModal {
-            width: 95%;
+            width: 90%;
             height: 40%;
-            padding: 2rem;
+            padding: .5rem;
         }
     };
 

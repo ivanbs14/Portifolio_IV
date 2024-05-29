@@ -30,7 +30,6 @@ export const Conteiner = styled.div`
         display: flex;
         flex-direction: column;
         gap: 1rem;
-        margin-bottom: 4rem;
 
         .icons{
             display: flex;
@@ -57,19 +56,9 @@ export const Conteiner = styled.div`
     };
 
     @media (max-width: 425px) {
-        .player-wrapper {
-            width: 100%;
-            height: 45%;
-            position: relative;
-        }
 
         .react-player {
             padding: 1rem;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
         };
 
         .descriptMovie {
