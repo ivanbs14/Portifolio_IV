@@ -83,15 +83,15 @@ export const Conteiner = styled.div`
 
     @media (max-width: 425px) {
         .closeBtn {
-            padding: 0rem 1rem;
+            padding: 1rem 0rem 0rem 0rem;
             .close-button {
                 font-size: 1.8rem;
             }
         };
 
         .mainModal {
-            width: 90%;
-            height: 40%;
+            width: 96%;
+            height: 25%;
             padding: .5rem;
         }
     };

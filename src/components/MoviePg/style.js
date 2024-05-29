@@ -58,7 +58,7 @@ export const Conteiner = styled.div`
     @media (max-width: 425px) {
 
         .react-player {
-            padding: 1rem;
+            padding: 1rem 0;
         };
 
         .descriptMovie {

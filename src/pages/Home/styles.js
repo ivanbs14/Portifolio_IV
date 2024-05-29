@@ -452,7 +452,7 @@ export const Conteiner = styled.div`
         #sectionOne{
 
             .subscripts {
-                width: 35rem;
+                width: 32rem;
 
                 h2{
                     font-family: 'Philosopher', sans-serif;

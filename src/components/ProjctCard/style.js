@@ -214,6 +214,7 @@ export const Conteiner = styled.div`
     @media (max-width: 768px) {
 
         .descript{
+
             .boxText {
                 height: 20rem;
             }
@@ -221,6 +222,10 @@ export const Conteiner = styled.div`
     };
 
     @media (max-width: 425px) {
-        width: 38rem;
+        width: 33rem;
+
+        .descript, .img-container{
+            width: 33rem;
+        }
     }
 `;

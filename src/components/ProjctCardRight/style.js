@@ -208,6 +208,10 @@ export const Conteiner = styled.div`
     };
 
     @media (max-width: 425px) {
-        width: 38rem;
+        width: 33rem;
+
+        .descript, .img-container{
+            width: 33rem;
+        }
     }
 `;
