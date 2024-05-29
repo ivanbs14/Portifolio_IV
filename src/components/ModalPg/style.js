@@ -61,37 +61,46 @@ export const Conteiner = styled.div`
 
     @media (max-width: 1500px) {
         .mainModal {
-            width: 70%;
-            height: 55%;
+            width: 70rem;
+            height: 60rem;
+            padding: 1rem 2rem;
         }
     };
    
     @media (max-width: 1280px) {
         .mainModal {
             width: 70rem;
-            height: 65rem;
+            height: 55rem;
+            padding: 1rem 2rem;
         }
+
+        .closeBtn {
+            padding: 0rem 1rem;
+            .close-button {
+                font-size: 1.8rem;
+            }
+        };
     };
-    
+    /* 
     @media (max-width: 768px) {
         .mainModal {
-            width: 80%;
-            height: 60%;
+            width: 70rem;
+            height: 65rem;
             padding: 2rem 2rem;
         }
-    };
+    }; */
 
     @media (max-width: 425px) {
         .closeBtn {
-            padding: 1rem 0rem 0rem 0rem;
+            padding: 0rem 1rem;
             .close-button {
                 font-size: 1.8rem;
             }
         };
 
         .mainModal {
-            width: 96%;
-            height: 25%;
+            width: 35rem;
+            height: 28rem;
             padding: .5rem;
         }
     };
