@@ -18,7 +18,7 @@ import { ModalPg } from '../../components/ModalPg';
 import { useState } from 'react';
 import { MoviePg } from '../../components/MoviePg/index';
 
-let curriculo = "https://drive.google.com/file/d/16ZL3Hz6PwqPy19KrKiW2REmlfh6MT7H3/view?usp=sharing";
+let curriculo = "https://drive.google.com/file/d/1jSEwG2-vsEjYcYY95kLhS9BPv2j_R-jb/view?usp=sharing";
 
 export function Home() {
     const [selectedCard, setSelectedCard] = useState(null);
@@ -26,7 +26,7 @@ export function Home() {
 
     const handleImageClick = (project) => {
         setSelectedCard(project);
-        console.log(project);
+        /* console.log(project); */
         setShowModal(true);
     };
 
@@ -72,7 +72,6 @@ export function Home() {
                             title={"IVAN"}
                             subTitle={"Desenvolvedor de Software"}
                         />
-
                     </div>
 
                     <div className='projectView'>
@@ -119,7 +118,6 @@ export function Home() {
                             onClose={() => setShowModal(false)} 
                         > <MoviePg propsMovie={selectedCard}/> </ModalPg>
                     )}
-                    
                 </div>
 
                 <div id="sectionTree" className="section">
@@ -130,25 +128,20 @@ export function Home() {
                             title={"IVAN"}
                             subTitle={"Desenvolvedor de Software"}
                         />
-                        
                     </div>
                     <div id='sobreM'>
                         <img className='perfil' src={perfilImg} alt="Imagem de um homem" />
                         <div id='descrtP'>
                             <h3>Ivan Barbosa</h3>
-                            <p className='boxText'>Olá, sou desenvolvedor de software jr desde 2022.<br/>
-                                Possuo habilidades fullstack, Mas meu forte é desenvolvimento front-end.<br/>
-                                - Graduado em Análise e Desenvolvimento de Sistemas.<br/>
-                                - Especialização Fullstack Explorer na Instituição. <a href="https://www.rocketseat.com.br/explorer">RockectSeat</a>.<br/>
-                                Trabalhando para sempre obter experiência nas skills que possuo: <br/>
-                                - Node.js, ReactJs, Javascript, TypeScript, Styled Components, SQL, MongoDB, Docker e Git.<br/>
-                                E intensificando as minhas habilidades comportamentais como:<br/>
-                                - organização, criatividade, raciocínio e dinamismo.
+                            <p className='boxText'>Olá, Sou desenvolvedor de software com experiência sólida em projetos full stack, atuando com tecnologias como React, Next.js, Node.js, NestJS e PostgreSQL. No projeto Hausey, tive a oportunidade de liderar tecnicamente o time, adquirindo experiência em liderança e assumindo a responsabilidade por decisões estratégicas, arquitetura de sistemas e entrega de soluções escaláveis com alta performance. Minha paixão é transformar ideias em experiências digitais intuitivas, otimizando não apenas o código, mas também o impacto do produto final. Tenho um olhar crítico para performance, foco em boas práticas de desenvolvimento e gosto de colaborar com times que buscam excelência técnica e inovação constante. Ao longo da minha trajetória, participei de projetos desafiadores, onde a criatividade, resiliência e aprendizado contínuo foram essenciais. Estou sempre em busca de novos desafios que me permitam crescer como profissional e contribuir de forma significativa.
                             </p>
-                            
+
                             <p className='pTwo'>Experiências:</p>
                             <p className='boxText'>
                                 <br/>
+                                Hausey Tech Lead | Full Stack Developer, Home office Desde de Outubro de 2024<br/>
+                                - Como Tech Lead e Desenvolvedor Full Stack na Hausey, lidero o desenvolvimento de funcionalidades escaláveis utilizando Next.js, NestJS, TypeScript e PostgreSQL. Atuo diretamente na definição da arquitetura do sistema, contribuindo para decisões estratégicas e melhorias contínuas de performance. Coordeno o time técnico no planejamento e entrega de soluções robustas, promovendo boas práticas de desenvolvimento e garantindo a qualidade do código. Com foco em escalabilidade e experiência do usuário, busco alinhar tecnologia e produto para gerar valor real ao negócio.
+                                <br/><br/>
                                 Desenvolvedor Front-end Bugaboo Studio, Híbrido Desde de Dezembro de 2023<br/>
                                 - Responsável pelo desenvolvimento e manutenção de novas funcionalidades no Front-end.<br/>
                                 - Tecnologias utilizadas: JavaScript, React, Styled Components, Git. 
@@ -157,9 +150,8 @@ export function Home() {
                                 - Projeto Uplitt App, responsável pelo desenvolvimento e manutenção de novas funcionalidades no Front-end.<br/>
                                 - Tecnologias utilizadas: JavaScript, Next, Tailwind, React, Styled Components, Git...
                             </p>
-                            
-                            <p className='pTwo'>Contatos:</p>
 
+                            <p className='pTwo'>Contatos:</p>
                             <div id='socialM'>
                                 <Link href="https://www.linkedin.com/in/ivan-barbosa-653a29192/">
                                         <FaLinkedin />
@@ -181,9 +173,7 @@ export function Home() {
                             />
                         </div>
                     </div>
-                    
                 </div>
-                
             </div>
         </Conteiner>
     )

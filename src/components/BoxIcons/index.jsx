@@ -8,8 +8,11 @@ import iconJs from '../../assets/javascript.svg';
 import iconSt from '../../assets/styled.svg';
 import iconTS from '../../assets/typescript.svg';
 import iconTw from '../../assets/tailwind-icon.svg';
+import iconNx from '../../assets/next.png';
+import iconNs from '../../assets/nest.png';
+import iconPs from '../../assets/polstgres.png';
 
-export function BoxIcons({ ts, rc, js, nd, sc, tw }) {
+export function BoxIcons({ ts, rc, js, nd, sc, tw, nx, ns, ps }) {
 
     return(
         <Conteiner>
@@ -59,6 +62,27 @@ export function BoxIcons({ ts, rc, js, nd, sc, tw }) {
                     imgTitle={iconSt}
                     subTitle="imagem simbolo styled components"
                     subText="Styled Components"
+                />
+            )}
+            {nx && (
+                <MiniCard
+                    imgTitle={iconNx}
+                    subTitle="imagem simbolo NextJs"
+                    subText="NextJs"
+                />
+            )}
+            {ns && (
+                <MiniCard
+                    imgTitle={iconNs}
+                    subTitle="imagem simbolo NestJs"
+                    subText="NestJs"
+                />
+            )}
+            {ps && (
+                <MiniCard
+                    imgTitle={iconPs}
+                    subTitle="imagem simbolo PostgreSQL"
+                    subText="PostgreSQL"
                 />
             )}
 

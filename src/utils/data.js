@@ -1,3 +1,4 @@
+import imgBalance from '../assets/balance.png';
 import imgIA from '../assets/01.png';
 import imgIfood from '../assets/foodexplorer.png';
 import imgMemory from '../assets/memory.png';
@@ -7,11 +8,19 @@ import imgTypeW from '../assets/typeW.png';
 
 export const projectsData = [
    {
+     imgLogo: imgBalance,
+     titleCd: "Balance AI - Gestão financeira pessoal",
+     subTitleCd: "Plataforma corporativa de gestão financeira pessoal que utiliza inteligência artificial para monitorar movimentações e oferecer insights personalizados. O sistema permite o controle detalhado de orçamento com recursos",
+     btnRef: "https://balance-neon.vercel.app/login",
+     icons: { nd: true, ts: true, js: true, rc: true, tw: true, nx: true, ns: true, ps: true },
+     video: 'https://youtu.be/SonR1LwSMjM',
+   },
+   {
      imgLogo: imgIA,
      titleCd: "AI copilador de Video...",
      subTitleCd: "Desenvolvido uma aplicação web, que recebe um video e interagindo com a API do chatgpt gera títulos, hashtags, e um resumo, do conteúdo do video.",
      btnRefGit: "https://github.com/ivanbs14/Upload_AI_web.git",
-     icons: { nd: true, ts: true ,js: true, rc: true, tw: true, },
+     icons: { nd: true, ts: true ,js: true, rc: true, tw: true, ps: true},
      video: 'https://youtu.be/hX-rhRG8sfQ',
    },
    {
@@ -20,7 +29,7 @@ export const projectsData = [
      subTitleCd: "API RESTFULL. O food explorer, é um menu interativo para um restaurante...",
      btnRefGit: "https://github.com/ivanbs14/FoodExplore_Front.git",
      //btnRef: "https://foofexploreriv.netlify.app/",
-     icons: { nd: true, js: true, sc: true, rc: true },
+     icons: { nd: true, js: true, sc: true, rc: true, ps: true},
      video: 'https://youtu.be/kRMU0gorPB8',
    },
    {
@@ -38,7 +47,7 @@ export const projectsData = [
      subTitleCd: "API RESTFULL. Onde após criar um cadastro e fazer Login. O usuário vai cadastrar seus filmes...",
      btnRefGit: "https://github.com/ivanbs14/RocketMOvies_Front-End.git",
      //btnRef: "https://notemovies.netlify.app/",
-     icons: { nd: true, js: true, sc: true, rc: true },
+     icons: { nd: true, js: true, sc: true, rc: true, ps: true },
      video: 'https://youtu.be/lZKgm5_hVY8',
    },
    {
@@ -55,7 +64,7 @@ export const projectsData = [
      subTitleCd: "API RESTFULL. Onde após criar um cadastro e fazer Login. O usuário vai cadastrar notas de estudos entre outros...",
      btnRefGit: "https://github.com/ivanbs14/NotPad_Front.git",
      //btnRef: "https://notepadss.netlify.app/",
-     icons: { nd: true, js: true, sc: true, rc: true },
+     icons: { nd: true, js: true, sc: true, rc: true, ps: true },
      video: 'https://youtu.be/XxV2cnpthlI',
    }
  ];

@@ -27,10 +27,13 @@ export function ProjctCard({imgLogo, titleCd, subTitleCd, btnRef, btnRefGit, ope
                 <div className="icons" {...rest}/>
 
                 <div className="datas">
-                    <ButtonText
-                        title={"Repositório GIT"}
-                        aRef={btnRefGit}
-                    />
+                    {btnRefGit && (
+                        <ButtonText 
+                            onClick={() => window.open(btnRefGit, "_blank")}
+                            title={"Ver código"}
+                            aRef={btnRefGit}
+                        />
+                    )}
                     
                     {btnRef && (
                         <ButtonText 
